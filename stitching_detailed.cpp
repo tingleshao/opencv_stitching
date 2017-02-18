@@ -901,7 +901,7 @@ int main(int argc, char* argv[])
         imwrite(result_name, result);
     }
     for (int img_idx = 0; img_idx < num_images; ++img_idx) {
-        LOGLN("last place: " << indices[img_idx]+1 << "\nR:\n" << cameras[img_idx].R << "\nK:\n" << cameras[img_idx].K << "\nt\n" << cameras[img_idx].t);
+        LOGLN("last place: " << indices[img_idx]+1 << "\nR:\n" << cameras[img_idx].R << "\nK:\n" << cameras[img_idx].K() << "\nt\n" << cameras[img_idx].t);
     }
     LOGLN("Finished, total time: " << ((getTickCount() - app_start_time) / getTickFrequency()) << " sec");
     return 0;
