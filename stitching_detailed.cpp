@@ -898,8 +898,7 @@ int main(int argc, char* argv[])
 
         LOGLN("Compositing, time: " << ((getTickCount() - t) / getTickFrequency()) << " sec");
 
-        imwrite(result_name, result);
-    }
+11              }
     for (int img_idx = 0; img_idx < num_images; ++img_idx) {
         LOGLN("last place: " << indices[img_idx]+1 << "\nR:\n" << cameras[img_idx].R << "\nK:\n" << cameras[img_idx].K() << "\nt\n" << cameras[img_idx].t);
     }
